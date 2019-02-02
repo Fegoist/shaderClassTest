@@ -227,7 +227,7 @@ int main()
 		
 		//the projection
 		glm::mat4 projection = glm::mat4(1.0f);
-		projection = glm::perspective(glm::radians(45.0f), 1080.0f / 720.0f, 0.1f, 100.f);
+		projection = glm::perspective(glm::radians(45.0f), 1080.0f / 720.0f, 0.1f, 100.0f);
 
 		unsigned int viewLoc = glGetUniformLocation(ourShader.ID, "view");
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
